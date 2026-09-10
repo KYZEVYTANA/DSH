@@ -1,1 +1,1 @@
-{"name":"DSH — Bitcoin Puzzle Lab","short_name":"DSH","start_url":"./","display":"standalone","background_color":"#080a0d","theme_color":"#0b0d10","icons":[{"src":"./icon-180.png","sizes":"180x180","type":"image/png"}]}
+{"name":"DSH — Bitcoin Puzzle Lab","short_name":"DSH","start_url":"./","scope":"./","display":"standalone","background_color":"#080a0d","theme_color":"#0b0d10","description":"Offline-first local compute lab","icons":[{"src":"./icon-180.png","sizes":"180x180","type":"image/png","purpose":"any maskable"}]}

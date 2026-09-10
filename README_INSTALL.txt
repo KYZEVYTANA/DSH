@@ -1,12 +1,25 @@
-DSH v2 — iPhone Safari / GitHub Pages
+DSH v3 — Offline Compute Lab
 
-1. Upload ALL files in this directory to the ROOT of a GitHub Pages repository.
-2. Settings -> Pages -> Deploy from branch -> main -> /(root).
-3. Open the generated HTTPS URL in Safari.
-4. Wait for DSH to load completely and open each tab once.
-5. Share -> Add to Home Screen -> keep Open as Web App enabled.
-6. Launch DSH from the Home Screen once while online.
-7. Turn off Wi-Fi and cellular data / Airplane Mode.
-8. Launch DSH again. System should report OFFLINE and Service Worker registered.
+GitHub Pages / iPhone Safari
 
-The app contains real local SHA-256 compute workers, benchmark, IndexedDB, offline cache, puzzle catalog, and supplied-private-key P2PKH verification. It does not contain a private-key brute-force/search engine.
+1. Repository root must contain index.html, manifest.webmanifest, sw.js and icon-180.png.
+2. GitHub Pages: Settings -> Pages -> Deploy from a branch -> main -> /(root).
+3. Open the HTTPS Pages URL in Safari.
+4. Wait for DSH to load completely.
+5. Run System -> self-test. WASM SHA-256 must report PASS.
+6. Share -> Add to Home Screen -> keep Open as Web App enabled.
+7. Launch DSH from the Home Screen once while online.
+8. Turn off Wi-Fi and cellular data / use Airplane Mode.
+9. Launch DSH again and verify OFFLINE plus self-test.
+
+v3 includes:
+- embedded WebAssembly SHA-256 engine;
+- real Web Worker compute pool;
+- benchmark and live rate;
+- IndexedDB checkpoint save/resume;
+- offline Service Worker cache;
+- local 1–160 puzzle catalog;
+- self-test and diagnostics;
+- no CDN, API or runtime network dependency for core functions.
+
+Scope limitation: DSH does not implement automated private-key brute-force/search against real Bitcoin addresses.
