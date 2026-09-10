@@ -1,19 +1,12 @@
-DSH — УСТАНОВКА НА iPHONE ЧЕРЕЗ SAFARI
+DSH v2 — iPhone Safari / GitHub Pages
 
-ВАЖНО: ZIP не устанавливается на iPhone как приложение. Эти файлы нужно один раз разместить на HTTPS-адресе. После первого открытия DSH кэшируется и может работать без интернета.
+1. Upload ALL files in this directory to the ROOT of a GitHub Pages repository.
+2. Settings -> Pages -> Deploy from branch -> main -> /(root).
+3. Open the generated HTTPS URL in Safari.
+4. Wait for DSH to load completely and open each tab once.
+5. Share -> Add to Home Screen -> keep Open as Web App enabled.
+6. Launch DSH from the Home Screen once while online.
+7. Turn off Wi-Fi and cellular data / Airplane Mode.
+8. Launch DSH again. System should report OFFLINE and Service Worker registered.
 
-1. Распакуйте архив.
-2. Разместите ВСЕ файлы папки на любом HTTPS-хостинге со статическими файлами.
-3. На iPhone откройте URL DSH именно в Safari.
-4. Дождитесь полной загрузки страницы.
-5. Нажмите (…) / Поделиться.
-6. Выберите «На экран Домой» / «Добавить на экран Домой».
-7. Если появляется переключатель «Открывать как веб-приложение», оставьте его включённым.
-8. Нажмите «Добавить».
-9. Запустите DSH с иконки на домашнем экране.
-10. Отключите Wi‑Fi и мобильный интернет.
-11. Снова запустите DSH. Он должен открыться из локального кэша.
-
-НЕ УДАЛЯЙТЕ ИКОНКУ И НЕ ОЧИЩАЙТЕ ДАННЫЕ SAFARI, если хотите сохранить офлайн-кэш.
-
-Для установки нужен интернет только на первом этапе. После успешной установки приложение не должно обращаться к сети для основных функций.
+The app contains real local SHA-256 compute workers, benchmark, IndexedDB, offline cache, puzzle catalog, and supplied-private-key P2PKH verification. It does not contain a private-key brute-force/search engine.
